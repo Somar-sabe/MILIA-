@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-    Route::get('/parents', function () {
+    Route::get('/', function () {
     return view('parents');
 });
-Route::post('/parents', 'ParentController@store')->name('parents.store');
+Route::post('/', 'ParentController@store')->name('parents.store');
